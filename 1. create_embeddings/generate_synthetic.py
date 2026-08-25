@@ -41,7 +41,7 @@ import torch
 from common import Combination, StreamingEncoderSource, build_parser, run
 
 #: (dim, normalised) per collection a synthetic run can stand in for, mirroring
-#: `KNOWN_COLLECTION_CONFIGS` in `2. create qdrant cluster/qdrant_connection.py`.
+#: `KNOWN_COLLECTION_CONFIGS` in `2. create_hnsw_index/qdrant_connection.py`.
 MIMICKABLE = {
     "open-images_resnet-50": (2048, False),
     "open-images_clip_vit_l14_336": (768, True),

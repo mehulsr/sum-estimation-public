@@ -20,7 +20,8 @@ failed run can resume, i.e. for prefix `<dataset>_<encoder>`:
 
 `--chunk-rows 0` writes one unnumbered matrix per variant instead
 (`<prefix>_embeddings.npy`, `<prefix>_ids.txt`), which is what
-`2. create qdrant cluster/qdrant_insert.py` currently reads.
+`2. create_hnsw_index/qdrant_insert.py` also reads (it prefers the sharded
+layout when a manifest is present).
 """
 
 from __future__ import annotations

@@ -6,10 +6,12 @@ __pycache__/
 results/
 # Generated embedding output (step 1); the .npy matrices can be tens of GB
 *.npy
-embeddings/*_ids.txt
-embeddings/*_manifest.json
-# Smoke-test output from 1. create_embeddings/test_generation.py
-embeddings/test_run/
+# Embeddings written by step 1
+embeddings/
+# Index metadata written by step 2
+hnsw_index/
+# Qdrant storage details from step 2
+2. create_hnsw_index/qdrant_storage/
 *.egg-info/
 dist/
 build/
